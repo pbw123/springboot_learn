@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="jpa-demo" />
+        <module name="quickstart" />
+        <module name="spring-boot-mybatis" />
+        <module name="spring-boot-redis" />
+        <module name="test" />
+        <module name="upload" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="jpa-demo" target="1.6" />
+      <module name="quickstart" target="1.8" />
+      <module name="spring-boot-mail" target="1.8" />
+      <module name="spring-boot-mybatis" target="1.8" />
+      <module name="spring-boot-redis" target="1.8" />
+      <module name="spring-data-jpa" target="1.8" />
+      <module name="test" target="1.8" />
+      <module name="upload" target="1.8" />
+      <module name="upload-demo" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
