@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.niit.dao.TModuleMapper">
+  <resultMap id="BaseResultMap" type="cn.niit.entity.TModule">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="module_name" jdbcType="VARCHAR" property="moduleName" />
+    <result column="module_path" jdbcType="VARCHAR" property="modulePath" />
+    <result column="module_type" jdbcType="INTEGER" property="moduleType" />
+    <result column="module_key" jdbcType="VARCHAR" property="moduleKey" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from t_module
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.niit.entity.TModule">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into t_module (module_name, module_path, module_type, 
+      module_key, create_time)
+    values (#{moduleName,jdbcType=VARCHAR}, #{modulePath,jdbcType=VARCHAR}, #{moduleType,jdbcType=INTEGER}, 
+      #{moduleKey,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="cn.niit.entity.TModule">
+    update t_module
+    set module_name = #{moduleName,jdbcType=VARCHAR},
+      module_path = #{modulePath,jdbcType=VARCHAR},
+      module_type = #{moduleType,jdbcType=INTEGER},
+      module_key = #{moduleKey,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, module_name, module_path, module_type, module_key, create_time
+    from t_module
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, module_name, module_path, module_type, module_key, create_time
+    from t_module
+  </select>
+  <resultMap id="BaseResultMap" type="cn.niit.entity.TModule">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="module_name" jdbcType="VARCHAR" property="moduleName" />
+    <result column="module_path" jdbcType="VARCHAR" property="modulePath" />
+    <result column="module_type" jdbcType="INTEGER" property="moduleType" />
+    <result column="module_key" jdbcType="VARCHAR" property="moduleKey" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from t_module
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.niit.entity.TModule">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into t_module (module_name, module_path, module_type, 
+      module_key, create_time)
+    values (#{moduleName,jdbcType=VARCHAR}, #{modulePath,jdbcType=VARCHAR}, #{moduleType,jdbcType=INTEGER}, 
+      #{moduleKey,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="cn.niit.entity.TModule">
+    update t_module
+    set module_name = #{moduleName,jdbcType=VARCHAR},
+      module_path = #{modulePath,jdbcType=VARCHAR},
+      module_type = #{moduleType,jdbcType=INTEGER},
+      module_key = #{moduleKey,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, module_name, module_path, module_type, module_key, create_time
+    from t_module
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, module_name, module_path, module_type, module_key, create_time
+    from t_module
+  </select>
+</mapper>
