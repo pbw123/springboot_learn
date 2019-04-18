@@ -1,7 +1,1 @@
-bbbbbbbbb
-cccccc
-abcdefg
-hello world java
-python
-99999
-ok
+javahello
