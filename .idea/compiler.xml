@@ -6,24 +6,35 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="jpa-demo" />
+        <module name="aliyun-oss-demo" />
+        <module name="jpg-demo" />
+        <module name="mobile-verify" />
+        <module name="mybatis-generator" />
+        <module name="mybatis-pagehelper" />
+        <module name="mybatis-plus" />
         <module name="quickstart" />
+        <module name="spring-boot-jpa-cache" />
+        <module name="spring-boot-lombok" />
         <module name="spring-boot-mybatis" />
         <module name="spring-boot-redis" />
-        <module name="test" />
+        <module name="spring-boot-thymeleaf" />
         <module name="upload" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="jpa-demo" target="1.6" />
+      <module name="aliyun-oss-demo" target="1.8" />
+      <module name="jpg-demo" target="1.6" />
+      <module name="mobile-verify" target="1.8" />
+      <module name="mybatis-generator" target="1.8" />
+      <module name="mybatis-pagehelper" target="1.8" />
+      <module name="mybatis-plus" target="1.8" />
       <module name="quickstart" target="1.8" />
-      <module name="spring-boot-mail" target="1.8" />
+      <module name="spring-boot-jpa-cache" target="1.8" />
+      <module name="spring-boot-lombok" target="1.8" />
       <module name="spring-boot-mybatis" target="1.8" />
       <module name="spring-boot-redis" target="1.8" />
-      <module name="spring-data-jpa" target="1.8" />
-      <module name="test" target="1.8" />
+      <module name="spring-boot-thymeleaf" target="1.8" />
       <module name="upload" target="1.8" />
-      <module name="upload-demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

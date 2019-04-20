@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/jpa-demo/jpa-demo.iml" filepath="$PROJECT_DIR$/jpa-demo/jpa-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aliyun-oss-demo/aliyun-oss-demo.iml" filepath="$PROJECT_DIR$/aliyun-oss-demo/aliyun-oss-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jpa-demo/jpg-demo.iml" filepath="$PROJECT_DIR$/jpa-demo/jpg-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mobile-verify/mobile-verify.iml" filepath="$PROJECT_DIR$/mobile-verify/mobile-verify.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis-generator/mybatis-generator.iml" filepath="$PROJECT_DIR$/mybatis-generator/mybatis-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis-pagehelper/mybatis-pagehelper.iml" filepath="$PROJECT_DIR$/mybatis-pagehelper/mybatis-pagehelper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis-plus/mybatis-plus.iml" filepath="$PROJECT_DIR$/mybatis-plus/mybatis-plus.iml" />
       <module fileurl="file://$PROJECT_DIR$/quickstart/quickstart.iml" filepath="$PROJECT_DIR$/quickstart/quickstart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-jpa-cache/spring-boot-jpa-cache.iml" filepath="$PROJECT_DIR$/spring-boot-jpa-cache/spring-boot-jpa-cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-lombok/spring-boot-lombok.iml" filepath="$PROJECT_DIR$/spring-boot-lombok/spring-boot-lombok.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-mybatis/spring-boot-mybatis.iml" filepath="$PROJECT_DIR$/spring-boot-mybatis/spring-boot-mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-redis/spring-boot-redis.iml" filepath="$PROJECT_DIR$/spring-boot-redis/spring-boot-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-thymeleaf/spring-boot-thymeleaf.iml" filepath="$PROJECT_DIR$/spring-boot-thymeleaf/spring-boot-thymeleaf.iml" />
       <module fileurl="file://$PROJECT_DIR$/upload/upload.iml" filepath="$PROJECT_DIR$/upload/upload.iml" />
     </modules>
   </component>
