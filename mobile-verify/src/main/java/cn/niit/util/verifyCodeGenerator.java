@@ -6,6 +6,7 @@ import java.util.Random;
  * Created by 潘炳稳 on 2019/4/14.
  */
 public class verifyCodeGenerator {
+//    生成验证码
 public static String getVerifyCode()
 {
     Random random=new Random();

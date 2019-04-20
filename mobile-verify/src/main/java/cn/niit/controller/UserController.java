@@ -21,7 +21,7 @@ public class UserController {
 @GetMapping(value = "/")
 public String sign(Model model)
 {
-    String code= MsUtil.send("17805136692");
+    String code= MsUtil.send("你接收验证码的手机号");
 //    String verifyCode = verifyCodeGenerator.getVerifyCode();
     model.addAttribute("code","验证码是"+code);
 
@@ -29,7 +29,7 @@ public String sign(Model model)
 //    attr.addFlashAttribute("code",code);
     return "sign_in.html";
 }
-
+//匹配输入的验证码和发送的验证码是否一致
     @PostMapping(value = "matchCode")
     public String matchCode(@RequestParam String yourCode,Model model) {
         String code =(String) request.getSession().getAttribute("code");
