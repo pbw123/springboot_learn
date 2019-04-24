@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Vue.js-访问API接口数据-蓝墨云班课练习</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!-- 通过CDN引入Vue.js -->
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<!-- 通过CDN引入axios -->
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<style type="text/css">
+			.container{
+				display: flex;
+				flex-direction: column;
+			}
+			.card{
+				display: flex;
+				margin-bottom: 10px;
+			}
+			.cover{
+				width: 100px;
+				height: 100px;
+			}
+			.cover img{
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app">
+			<div class="top">
+				<p>{{users.length}}个人在线</p>
+			</div>
+			<hr>
+			<div class="container">
+				<div class="card" v-for="user in users">
+					<div class="cover">
+						<img :src="'img/'+user.avatarURL">
+					</div>
+					<div class="">
+						<p>{{user.id}}</p>
+					</div>
+					<div class="">
+						<p>{{user.name}}</p>
+					</div>
+					
+				</div>
+			
+			</div>
+			
+		</div>
+		<script type="text/javascript">
+			var app = new Vue({
+				el: '#app',
+				data: {
+					users: []
+				},
+				created: function() {
+					var _this = this;
+					axios.get('http://localhost:8888/api/getAll')
+						.then(function(response) {
+							_this.users = response.data;
+						})
+				}
+			})
+		</script>
+	</body>
+</html>
