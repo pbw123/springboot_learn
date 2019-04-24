@@ -20,6 +20,9 @@ public class Users {
         this.password = password;
     }
 
+    public Users() {
+    }
+
     public Integer getId() {
         return id;
     }
