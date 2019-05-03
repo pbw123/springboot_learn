@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
-  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -17,8 +14,12 @@
         <option value="$PROJECT_DIR$/mybatis-pagehelper/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-lombok/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/front-rear-separation/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-jpa-cache/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-thymeleaf/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-swagger2/pom.xml" />
+        <option value="$PROJECT_DIR$/swagger-test/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-mail/pom.xml" />
       </list>
     </option>
   </component>
