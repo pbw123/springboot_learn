@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.niit.mybatisforeach.mapper.UserMapper">
+
+    <!-- 使用foreach接收list参数 -->
+    <select id="getUsersByListParam" resultType="cn.niit.mybatisforeach.pojo.User">
+        select * from t_user
+        <foreach collection="list" item="item" open="where id in(" close=")" separator=",">
+            #{item}
+        </foreach>
+    </select>
+
+    <!-- 使用foreach批量插入用户-->
+    <insert id="insertMultiUsers">
+        insert into t_user(id,name)
+        values
+        <foreach collection="users" item="user" separator=",">
+            (#{user.id},#{user.name})
+        </foreach>
+    </insert>
+
+<!--使用foreach接收array数组-->
+    <select id="getUserByArrayList" parameterType="java.util.ArrayList" resultType="cn.niit.mybatisforeach.pojo.User">
+        select * from t_user where id in
+        <foreach collection="array" index="index" item="item" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </select>
+
+<!--使用foreach接收Map-->
+    <select id="getUserByMap" parameterType="java.util.HashMap"
+            resultType="cn.niit.mybatisforeach.pojo.User">
+        select * from t_user where  id in
+        <foreach collection="ids" index="index" item="item" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </select>
+
+
+</mapper>
