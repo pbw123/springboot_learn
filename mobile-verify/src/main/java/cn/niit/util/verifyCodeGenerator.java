@@ -3,7 +3,7 @@ package cn.niit.util;
 import java.util.Random;
 
 /**
- * Created by 潘炳稳 on 2019/4/14.
+ * Created by wen on 2019/4/14.
  */
 public class verifyCodeGenerator {
 //    生成验证码
